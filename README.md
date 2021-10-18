@@ -24,7 +24,4 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # vue 网易云音乐
-
-## 发现音乐
-* 轮播图
-接口地址：/homepage/block/page
+[![5UrLY6.png](https://z3.ax1x.com/2021/10/18/5UrLY6.png)](https://imgtu.com/i/5UrLY6)
