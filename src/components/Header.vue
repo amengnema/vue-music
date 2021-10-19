@@ -192,7 +192,7 @@ export default {
       if(this.inputValue.trim() == '') return
       //发起请求
       this.getSearchSuggest(this.inputValue)
-      console.log(this.inputValue)
+      // console.log(this.inputValue)
     }, 1000),
     //去搜索页面
     handleSearch() {

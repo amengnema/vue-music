@@ -8,7 +8,7 @@ const store = new Vuex.Store({
   actions: {
     //获取歌曲链接 [可删除]
     async getMusicLink(context,value) {
-      console.log(value);
+      // console.log(value);
       const {data} = await request({
         method: 'get',
         url: '/song/url',
@@ -82,12 +82,12 @@ const store = new Vuex.Store({
       context.commit('CHANGE_COMMENT_MUSIC',comment_music)
       context.commit('CHANGE_LYRIC',lyric)
       context.commit('UPDATE_PLAYING_MUSIC_ID',value)
-      console.log(song_link.data[0].url);
-      console.log(song_detail.songs);
-      console.log(simi_playlist.playlists);
-      console.log(simi_song.songs);
-      console.log(comment_music);
-      console.log(lyric);
+      // console.log(song_link.data[0].url);
+      // console.log(song_detail.songs);
+      // console.log(simi_playlist.playlists);
+      // console.log(simi_song.songs);
+      // console.log(comment_music);
+      // console.log(lyric);
     },
     //添加当前歌曲到当前播放列表，判断是否有重复的歌曲
     addSongToPlaylist(context,value) {

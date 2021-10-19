@@ -251,7 +251,7 @@ export default {
     //拖动条值改变
     handleSoundChange() {
       //设置音量
-      console.log(this.soundValue/100);
+      // console.log(this.soundValue/100);
       this.$refs.audio.volume = this.soundValue/100
     }
   },

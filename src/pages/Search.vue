@@ -147,19 +147,19 @@ export default {
       if(index === 0) {
         if(JSON.stringify(this.songsResult) != '{}') return
         this.getSearchList(1,1)
-        console.log(0)
+        // console.log(0)
       }else if(index === 1) {
         if(JSON.stringify(this.artistsResult) != '{}') return
         this.getSearchList(100,1)
-        console.log(1)
+        // console.log(1)
       }else if(index === 2) {
         if(JSON.stringify(this.albumsResult) != '{}') return
         this.getSearchList(10,1)
-        console.log(2)
+        // console.log(2)
       }else {
         if(JSON.stringify(this.playlistsResult) != '{}') return
         this.getSearchList(1000,1)
-        console.log(3)
+        // console.log(3)
       }
     },
     //发起请求，获取列表
@@ -189,7 +189,7 @@ export default {
         this.playlistsResult = data.result
       }
       this.loading = false
-      console.log('发请求了');
+      // console.log('发请求了');
     },
     //currentPage 改变时会触发
     handleSongsPage(val) {
@@ -286,7 +286,7 @@ export default {
           this.playlistsResult = {}
           //搜索
           this.getSearchList(1,1)
-          console.log(this.$route.params.keyword)
+          // console.log(this.$route.params.keyword)
         }
       },
       deep:true

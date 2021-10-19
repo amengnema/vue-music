@@ -388,17 +388,17 @@ export default {
       const ai = this.$refs.albumImg
       if(!ai) return
       if(!this.showPlayerDetail) return
-      console.log(ai+ '1');
+      // console.log(ai+ '1');
       this.curDeg ? this.curDeg :  this.curDeg = 0
       if(val) {
-        console.log('playing','转动');
-        console.log(ai+ '2');
+        // console.log('playing','转动');
+        // console.log(ai+ '2');
         this.si = setInterval(() => {
           this.curDeg += 0.3
           ai.style.transform = `rotate(${this.curDeg}deg)`
         },40)
       }else {
-        console.log('stop','暂时停止');
+        // console.log('stop','暂时停止');
         clearInterval(this.si)
       }
     },
@@ -406,17 +406,17 @@ export default {
       const ai = this.$refs.albumImg
       if(!ai) return
       if(!this.playing) return
-      console.log(ai+ '1');
+      // console.log(ai+ '1');
       this.curDeg ? this.curDeg :  this.curDeg = 0
       if(val) {
-        console.log('playing','转动');
-        console.log(ai+ '2');
+        // console.log('playing','转动');
+        // console.log(ai+ '2');
         this.si = setInterval(() => {
           this.curDeg += 0.3
           ai.style.transform = `rotate(${this.curDeg}deg)`
         },40)
       }else {
-        console.log('stop','暂时停止');
+        // console.log('stop','暂时停止');
         clearInterval(this.si)
       }
     },
